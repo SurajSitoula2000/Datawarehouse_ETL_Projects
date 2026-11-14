@@ -1,6 +1,3 @@
-import pypandoc
-
-readme = r"""<div align="center">
 
 # 🏢 Modern Data Warehouse & ETL Project
 
@@ -161,11 +158,5 @@ The intended outcomes of this project include:
 
 **Bronze → Preserve | Silver → Clean | Gold → Analyze**
 
-*Turning raw data into structured, reliable, and analytics-ready information.*
-
 </div>
-"""
 
-output_path = "/mnt/data/README.md"
-pypandoc.convert_text(readme, "md", format="md", outputfile=output_path, extra_args=["--standalone"])
-print(f"Created: {output_path}")
